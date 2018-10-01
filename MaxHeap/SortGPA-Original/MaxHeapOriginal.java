@@ -3,7 +3,6 @@ import java.util.Collection;
 
 /**
 Original code of the MaxHeap class
-@author Uyen
 */ 
 public class MaxHeap { 
 	private ArrayList students;
