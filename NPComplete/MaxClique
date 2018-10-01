@@ -3,8 +3,16 @@
  * determines the largest possible clique in a graph and answers whether such a graph exist. The Graph
  * class and methods are already provided and the assignment only requires
  * writing one method: findMax(Graph g)
- * The program returns an array of booleans which nodes that exist in the clique are marked as
- * true while other nodes are marked as false. 
+ * The program returns an array of booleans which vertices that exist in the clique are marked as
+ * true while other vertices are marked as false. The vertices are numbered starting at 0.
+ *
+ * An imaginary Graph class provides the following methods:
+ * 		int size() - This returns the number of vertices in a graph.
+ *		Graph remove (int index) - This method does not necessarily "remove" the vertex at that index; 
+ 					   it returns a copy of the graph that does not include the vertex at the 
+					   index as well as any edges attatched to the vertex. Keep in mind that 
+					   the vertices shift accordingly.
+ *		boolean has(int size) - This method determines if a clique of the given size exists in the graph. 
  */
 public class Utility {
 	/**
