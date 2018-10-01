@@ -1,0 +1,44 @@
+/**
+ * As a way to understand how a "black box" is used to solve problems, this program
+ * determines the largest possible clique in a graph and answers whether such a graph exist. The Graph
+ * class and methods are already provided and the assignment only requires
+ * writing one method: findMax(Graph g)
+ * The program returns an array of booleans which nodes that exist in the clique are marked as
+ * true while other nodes are marked as false. 
+ */
+public class Utility {
+	/**
+	 * @param g
+	 * @return max
+	 */
+	public static boolean[] findMax(Graph g) {
+		boolean[] max = new boolean[g.size()]; // boolean array that will be returned.
+
+		Graph t = g;
+		int size = g.size();
+
+		while (size > 0 && !g.has(size)) { // calculates the largest clique size in the graph
+			size--; // and uses that size to find that clique
+		}
+
+		int shift = 0;
+
+		for (int i = 0; i < g.size(); i++) {
+			t = g.remove(shift);
+
+			if (!t.has(size)) {
+				t = g;
+				
+				max[i] = true;
+				
+				shift++; // since graph does not change and we need to move onto the next vertex
+			}		
+			
+			else {
+				g = t; // "removes" the vertex that is not part of the clique and turns that into the new graph. 
+			}
+		}
+
+		return max;
+	}
+}
