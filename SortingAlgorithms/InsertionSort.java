@@ -2,7 +2,6 @@
  * Insertion Sort based off Insertion Sort algorithm used in  
  * "Introduction to Algorithms" (Third Edition) by by Thomas H. Cormen, 
  * Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
- *
  */
 public class InsertionSort {
 	public static int[] sort(int[] s) {
