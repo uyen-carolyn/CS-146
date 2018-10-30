@@ -1,6 +1,7 @@
 /**
- * Program that sorts an array of numbers using the quicksort algorithm
- */
+ * Quicksort based off Quicksort algorithm used in  
+ * "Introduction to Algorithms" (Third Edition) by by Thomas H. Cormen, 
+ * Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
 public class QuickSort1 {
 	/**
 	 * Sorts the array using recursion
