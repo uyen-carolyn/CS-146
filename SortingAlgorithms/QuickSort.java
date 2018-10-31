@@ -2,7 +2,8 @@
  * Quicksort based off Quicksort algorithm used in  
  * "Introduction to Algorithms" (Third Edition) by by Thomas H. Cormen, 
  * Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein
-public class QuickSort1 {
+ */
+public class QuickSort {
 	/**
 	 * Sorts the array using recursion
 	 * 
