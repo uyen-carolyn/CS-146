@@ -5,4 +5,5 @@ The repository contains programming assignments that have been completed in this
 * Basis of computational complexity theory such as understanding problems categorized as P, NP, NP-hardness, etc. 
 * Understanding time complexities and determining what complexity a program/method runs in. 
 * Using Discrete Mathematics to prove or disprove time complexities. 
+
 The class is instructed by Java, and programs are written in Java. 
